@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="/ttcu/src/css/main.css">
     <link rel="stylesheet" href="indexuser.css">
     <link rel="stylesheet" href="/ttcu/src/css/scroll.css">
-
     <link rel="stylesheet" href="/ttcu/src/footer.css">
     <link rel="stylesheet" href="darkmode/moon.css">
     <link rel="stylesheet" href="../../../../src/css/updatepost.css">
@@ -66,10 +65,14 @@
                     </ul>
                         <form class="form-inline mr-auto" target="_self">  </form>
                           
-                        <span class="navbar-text">
-                            <a href="../../../userinfo/userinfo.html"  ><img src="../../../../src/img/per.PNG"></a>
+                        <span class="navbar-text"> 
+
+
+                            <a id="adminpanelLink"  class="login" role="button" href="/ttcu/Pages/adminPanel/admin.html" style="visibility: hidden;" >پنل مدیریت</a>
                             <a id="signupLink" class="btn btn-light action-button" role="button" href="../../../signup/Signup.html" style="visibility: hidden;">ثبت نام اعضاء</a>
-                            </span>
+                            <a href="../../../userinfo/userinfo.html"  ><img src="../../../../src/img/per.PNG"></a>
+
+                          </span>
 
                         
                  
@@ -522,6 +525,7 @@ xmlhttp.send(JSON.stringify(detailArr));
               if(userType=='ADMIN'||userType=='MASTER')
               {
                 document.getElementById("signupLink").style.visibility = 'visible';
+                document.getElementById("adminpanelLink").style.visibility = 'visible';
               }
              window.localStorage.setItem('userType',userType);
               loadPosts();
@@ -567,9 +571,9 @@ xmlhttp.send(JSON.stringify(detailArr));
 
 
   <script src="/ttcu/src/app/scroll.js"></script>
+    <script src="darkmode/darkmod.js"></script>
     <script src="../../../../src/app/updatepost.js"></script>
     <script src="../../../../src/app/enumConverter.js"></script>
-    <script src="darkmode/darkmod.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <!----->

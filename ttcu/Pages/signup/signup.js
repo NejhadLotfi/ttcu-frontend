@@ -19,7 +19,7 @@ const togglePassword = document.querySelector('#togglePassword');
         if(re.test(input.value.trim())) {
             showSuccess(input);
         } else {
-            showError(input, `تعداد کاراکتر ها حداقل 8و حداکثر 15 باشد!عدد،علائم،فضای خالی،زبان انگلیسی دراین فیلد نامعتبراست `) 
+            showError(input, `تعداد کاراکتر ها حداقل 8و حداکثر 15 باشد!عدد،علائم،فضای خالی،زبان فارسی دراین فیلد نامعتبراست `) 
                
    
             }      
@@ -33,7 +33,7 @@ const togglePassword = document.querySelector('#togglePassword');
                 showSuccess(input);
             } else {
                 showError(input,
-                     `تعداد کاراکتر ها حداقل 2باید وحداکثر 15 باشد|عدد،علائم،فضای خالی،زبان فارسی در این فیلد نامعتبراست `) 
+                     `تعداد کاراکتر ها حداقل 2باید وحداکثر 15 باشد|عدد،علائم،فضای خالی،زبان انگلیسی در این فیلد نامعتبراست `) 
     
                 }      
                }          
@@ -45,7 +45,7 @@ const togglePassword = document.querySelector('#togglePassword');
                     showSuccess(input);
                 } else {
                     showError(input,
-                         `تعداد کاراکتر ها حداقل 3باید وحداکثر 15 باشد|عدد،علائم،فضای خالی،زبان فارسی در این فیلد نامعتبراست `) 
+                         `تعداد کاراکتر ها حداقل 3باید وحداکثر 15 باشد|عدد،علائم،فضای خالی،زبان انگلیسی در این فیلد نامعتبراست `) 
         
                     }      
                    } 
